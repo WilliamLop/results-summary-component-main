@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;900&display=swap');
+
+
+:root{
+    
+    --Lightredhsla: hsla(0, 100%, 67%, 0.11);
+    --Orangeyyellowhsla: hsla(39, 100%, 56%, 0.11);
+    --Greentealhsla: hsla(166, 100%, 37%, 0.075);
+    --Cobaltbluehsla: hsla(234, 85%, 45%, 0.068);
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+    --Lightslatebluebg: hsl(252, 100%, 67%);
+    --Lightroyalbluebg: hsl(241, 81%, 54%);
+
+    --Violetbluecircle: hsla(256, 72%, 46%, 1);
+    --Persianbluecircle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(224, 31%, 90%);
+    --Paleblue2: hsl(228, 3%, 62%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+main{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card__info{
+    background: linear-gradient(var(--Lightslatebluebg), var(--Lightroyalbluebg));
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+.card__result{
+    color: var(--Paleblue);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.card__circle{
+    background: linear-gradient(var(--Violetbluecircle), var(--Persianbluecircle));
+    border-radius: 50%;
+    width: 160px;
+    height: 170px;
+    margin: 2rem auto;
+}
+.card__number{
+    font-size: 3.5em;
+    color: var(--White);
+    font-weight: 800;
+    margin: 0;
+    padding: 2.3rem 0 0 0;
+}
+.card__of{
+    padding: 0.3rem 0 0 0;
+    color: var(--Lightlavender);
+}
+.card__title{
+    font-size: 1.4em;
+    color: var(--White);
+    font-weight: 500;
+    margin: 1.5rem 0 1rem 0;
+}
+.card__description{
+    margin: 0.3rem auto;
+    color: var(--Paleblue);
+    width: 65%;
+    font-size: 0.9em;
+}
+
+
+.card__content{
+    padding: 0rem 2rem;
+    display: grid;
+    gap: 1rem;
+}
+.card__summary{
+    font-size:1.1em;
+    margin: 1.5rem 0 0.5rem 0;
+}
+.card__img{
+    padding-left:0.7rem;
+} 
+
+.card__skills{
+    padding-right: 0.7rem;
+    
+}
+
+.card__img, .card__skills{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 0.6rem;
+}
+.card__reaction{
+    background-color: var(--Lightredhsla);
+}
+.card__reaction .card__paragraph{
+    color: var(--Lightred);
+    font-weight: 700;
+}
+.card__memory{
+    background-color: var(--Orangeyyellowhsla);
+}
+.card__memory .card__paragraph{
+    color: var(--Orangeyyellow);
+    font-weight: 700;
+}
+.card__verbal{
+    background-color: var(--Greentealhsla);
+}
+.card__verbal .card__paragraph{
+    color: var(--Greenteal);
+    font-weight: 700;
+}
+.card__visual{
+    background-color: var(--Cobaltbluehsla);
+}
+.card__visual .card__paragraph{
+    color: var(--Cobaltblue);
+    font-weight: 700;
+}
+strong{
+    font-weight: 800;
+    color: var(--Darkgrayblue);
+}
+.card__numbers{
+    color: var(--Paleblue2);
+}
+.card__continue{
+    background-color: var(--Darkgrayblue);
+    margin: 0.2rem 0 2rem 0;
+    padding: 1.1rem;
+    border: none;
+    font: inherit;
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 1.5rem;
+}
+
+@media(min-width:48rem){
+    main{
+        display: grid;
+        height: 100vh;
+        place-items: center;
+    }
+    .card{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--White);
+        filter: drop-shadow(2px 3px 10px rgba(13, 68, 139, 0.192));
+        border-radius: 0 1.5rem 1.5rem 0;
+    }
+    .card__info{
+        border-radius: 1.5rem;
+    }
+    
+}
+
+@media(min-width:64rem){
+    .card{
+        width: 60%;
+    }
+}
+@media(min-width:80rem){
+    .card{
+        width: 50%;
+    }
+}
+@media(min-width:90rem){
+    .card{
+        width: 45%;
+    }
+}
+@media(min-width:120rem){
+    .card{
+        width: 33%;
+    }
+}
+@media(min-width:150rem){
+    .card{
+        width: 24%;
+    }
+}
